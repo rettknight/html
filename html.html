@@ -46,4 +46,75 @@ opAF{
 <bdo> for bi-directional override sheterooni (write backwards=rtl)
 Cap 12 --> 
 
+<!-- var defines mathematical value, sup makes stuff above and sub below, example: (cap 13)-->
+<p>Einstein wrote:</p>
+
+<p><var>E = m c<sup>2</sup></var></p> 
+
+<!-- <code> to insert code, but it doesn't keep linebreaks and whitespaces, fix with <pre> -->
+Example: 
+
+<code>
+var stuff = {
+	stuff!
+	STOOF
+}
+</code>
+<pre>
+<code>
+var stuff = {
+	stuff!
+	STOOF
+}
+</code></pre> 	
+
+<!-- Comments = Cap 14, examples everywhere. el o el --> 
+<style>
+body {background-color:lightgrey}
+h1   {color:blue}
+p    {color:green}
+</style> 
+<!-- Cap 15 format such as the bg color 
+Enough examples with RoR tut in boom repository 
+public/stylesheets/custom.css
+-->
+<a href="http:github.com/rettknight/boom.git">Boom Repo!</a> 
+<!-- Cap 16 HTML Links & format with css properties -->
+<style>
+a:link    {color:#000000; background-color:transparent; text-decoration:none}
+a:visited {color:#000000; background-color:transparent; text-decoration:none}
+a:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
+a:active  {color:#ff0000; background-color:transparent; text-decoration:underline}
+</style> 
+<!-- To put a link with an image you just have to put the anchor <a> signs between the images' brackets 
+Cap 17 - Images 
+-->
+
+<h2>Spectacular Mountains</h2>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px"> 
+<!-- 
+To insert images it's just to say what location is has, and the size and other properties can be edited with the style class or with css itself. 
+Can be used as a link or as a image location inside the same server. 
+-->
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map> <br>
+<!-- The map attribute can be useful when dividing an image so it does something on click or hover. -->
+
+<!-- Cap 18 - Tables --> 
+<!-- Enough examples on the boom rep --> 
+<table>
+	<tr>Row</tr>
+	<td>Data 1</td>
+	<td>Data 2</td>
+	<tr> Row 2 </tr>
+	<td> Data 3</td>
+	<td> Data 4 </td> 
+</table>
 </html>
