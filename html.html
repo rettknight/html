@@ -117,4 +117,131 @@ Can be used as a link or as a image location inside the same server.
 	<td> Data 3</td>
 	<td> Data 4 </td> 
 </table>
+
+<!-- Cap 19 Lists 
+Types of lists, ordered, unordered
+unordered styles: disc(def), circle, square, none
+<ul style = "style"> </ul>, not putting a style will use disc
+Ordered <ol> </ol>  
+Ordered Types: 1 (numbers)(default), A, a (letters upcase and downcase) , I, i (Romans upcase and downcase)
+-->
+<ul><li>hi</li><li>bye</li></ul>
+<ol><li>hi</li> <li>bye</li></ol>
+<!-- 
+HTML Block elements - Cap 20 
+Can be applied to anything with the insertion of style 
+-->
+<div style="background-color: blue;">
+Popo! 
+</div>
+<style>
+span.red {color:red;}
+</style>
+</head>
+<body>
+<!-- Cap 21 Classes, used with . in CSS files, which is why span.red { }defines the color for anything with class red -->
+<h1><span class="red">Chet!</span> OP</h1>
+<!-- Layouts, Cap 22 -->
+<style>
+#header {
+	background-color:black;
+	color: white;
+	text-align: center;
+	padding:5px;
+}
+#nav{
+	line-height: 30px; 
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+<div id="header">Yo!</div>
+<div id="nav">Si <br>
+No<br>
+Bye<br>
+</div>
+<h2> Bam. </h2>
+<div id="section">Jejeekisde</div>
+<div id="footer">Mmm no.</div>
+</body>
+<!-- Cap 23, Responsive Web Design, Bootstrap
+What use <html lang="en-US"> ? 
+
+Bootstrap example:
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="jumbotron">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Paris</h2>
+    <p>Paris is the capital and most populous city of France.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html> -->
+<style>
+.ope {
+    float: left;
+    margin: 5px;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+} 
+</style>
+<div class="ope">
+This is op
+</div>
+<div class ="ope">So op</div>
+<!-- Cap 24, Iframes, to show pages in the same page 
+Syntax: 
+<iframe src="url" width="20" heigh="20"></iframe>
+Also, can give it a name and use a link targeted into that iframe
+<a href="url" target="iframename"> Text </a> 
+-->
+<iframe src="https://localhost:3000" name="iframe" width="200" height="200"> </iframe>
+<a href="https://google.com" target="iframe">Change to Google.com </a>
+<!-- Figure how to make them work later -->
 </html>
